@@ -1,0 +1,50 @@
+/* subscription */
+.subscription {
+    margin-top: 90px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.subscription .body {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+
+.subscription .info {
+    padding: 0 80px;
+    width: 670px;
+    max-width: 100%;
+}
+
+.subscription .info .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.subscription .info .desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    opacity: 0.75;
+}
+
+.subscription .info .btn {
+    margin-top: 20px;
+    padding: 18px 40.5px;
+    color: #002366;
+    background: #fff;
+}
+
+.subscription .body .image {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}

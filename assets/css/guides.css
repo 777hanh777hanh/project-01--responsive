@@ -1,0 +1,101 @@
+/* guilds */
+
+.guides {
+    margin-top: 40px;
+    padding: 93px 0 79px 0;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.guides .sub-title::before {
+    content: '';
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    background: var(--text-color);
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    text-align: center;
+    color: var(--desc-color);
+    text-align: center;
+}
+
+.list-guides {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-item .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #3b3c45;
+}
+
+.guide-item .link {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #0689ff;
+}
+
+.guide-item .link:hover {
+    text-decoration: underline;
+}
+
+/* remove space between inline/inline-block elements */
+/* .guide-item .link {
+    display: inline-block;
+    font-size: 0;
+}
+.guide-item .link span {
+    font-size: 1.4rem;
+} */
+
+.guide-item .link img {
+    margin-left: 8px;
+}
+
+.guides-cta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.guides-cta .btn {
+    min-width: 170px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    line-height: 1.5385;
+    font-size: 1.3rem;
+}

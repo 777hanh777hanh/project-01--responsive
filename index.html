@@ -4,29 +4,45 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project-01</title>
+        <title>Project-01--responsive</title>
+        <!-- Favicon -->
         <link rel="shortcut icon" href="/assets/img/logo.jpeg" type="image/x-icon" />
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
         <link rel="stylesheet" type="text/css" href="./assets/fonts/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- PC Header -->
         <header class="fixed-header">
             <div class="content">
                 <nav class="navbar">
+                    <!-- Tablet / mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
-                    <a href="#">
+                    <a href="#" class="logo">
                         <img src="./assets/img/logo.svg" alt="Logo" class="logo" />
                     </a>
 
                     <!-- Navigation -->
-                    <ul>
+                    <ul class="navigation pc-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#rescource">Resources</a></li>
                         <li><a href="#contact">Contact</a></li>
+
+                        <li class="show-on-mobile separate"><a href="#!">Sign in</a></li>
+                        <li class="show-on-mobile"><a href="#!">Sign up</a></li>
                     </ul>
 
                     <!-- Action -->
@@ -38,7 +54,26 @@
             </div>
         </header>
 
-        <main id="home">
+        <!-- Tablet/Mobile Header -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu Content -->
+            <div class="menu-drawer">
+                <!-- logo menu mobile -->
+                <a href="#" class="logo-menu-mobile">
+                    <img src="./assets/img/logo.svg" alt="Logo" />
+                </a>
+
+                <!-- Navigation -->
+                <ul class="navigation mobile-nav"></ul>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main id="home" style="display: none">
             <!-- hero -->
             <div class="hero-wrap">
                 <div class="content">
@@ -47,8 +82,8 @@
                             <p class="sub-title">Welcome to Besnik Agency</p>
                             <h1 class="title notranslate">Discover a place you'll love to live.</h1>
                             <p class="desc">
-                                Get the best real estate deals first, before they hit the mass market! HOT FORECLOSURE
-                                DEALS with one simple search.
+                                Get the best real estate deals first, before they hit the mass market! HOT
+                                FORECLOSURE DEALS with one simple search.
                             </p>
                             <!-- cta = call to action -->
                             <div class="hero-cta">
@@ -108,7 +143,8 @@
                 <div class="content">
                     <h2 class="sub-title">How its works?</h2>
                     <p class="desc">
-                        Everything you need to know when you're looking to buy, rent, or sell - all in one place.
+                        Everything you need to know when you're looking to buy, rent, or sell - all in one
+                        place.
                     </p>
 
                     <!-- List guides -->
@@ -166,10 +202,14 @@
                     <!-- list featured -->
                     <div class="list">
                         <div class="item">
-                            <a href="#!"><img src="./assets/img/feature-1.avif" alt="nikko" class="thumb" /></a>
+                            <a href="#!"
+                                ><img src="./assets/img/feature-1.avif" alt="nikko" class="thumb"
+                            /></a>
                             <div class="body">
                                 <h3 class="title">
-                                    <a href="#!" class="line-clamp" style="--line-clamp: 1">Nikko Apartments</a>
+                                    <a href="#!" class="line-clamp" style="--line-clamp: 1"
+                                        >Nikko Apartments</a
+                                    >
                                 </h3>
                                 <p class="desc line-clamp" style="--line-clamp: 1">
                                     8502 Preston Rd. Inglewood, Maine 98280
@@ -190,7 +230,9 @@
                             /></a>
                             <div class="body">
                                 <h3 class="title">
-                                    <a href="#!" class="line-clamp" style="--line-clamp: 1">CouCou Homestead</a>
+                                    <a href="#!" class="line-clamp" style="--line-clamp: 1"
+                                        >CouCou Homestead</a
+                                    >
                                 </h3>
                                 <p class="desc line-clamp" style="--line-clamp: 1">
                                     8502 Preston Rd. Inglewood, Maine 9828
@@ -207,11 +249,16 @@
                         </div>
                         <div class="item">
                             <a href="#!"
-                                ><img src="./assets/img/feature-3.avif" alt="Lavis 18 Residence" class="thumb"
+                                ><img
+                                    src="./assets/img/feature-3.avif"
+                                    alt="Lavis 18 Residence"
+                                    class="thumb"
                             /></a>
                             <div class="body">
                                 <h3 class="title">
-                                    <a href="#!" class="line-clamp" style="--line-clamp: 1"> Lavis 18 Residence </a>
+                                    <a href="#!" class="line-clamp" style="--line-clamp: 1">
+                                        Lavis 18 Residence
+                                    </a>
                                 </h3>
                                 <p class="desc line-clamp" style="--line-clamp: 1">
                                     8502 Preston Rd. Inglewood, Maine 98280
@@ -291,9 +338,9 @@
                         <div class="info">
                             <h2 class="sub-title">You’ve found a neighborhood you love.</h2>
                             <p class="desc">
-                                When you own a home, you’re committing to living in one location for a while. In a
-                                recent Trulia survey, we found that five out of six respondents said finding the right
-                                neighborhood
+                                When you own a home, you’re committing to living in one location for a while.
+                                In a recent Trulia survey, we found that five out of six respondents said
+                                finding the right neighborhood
                             </p>
                         </div>
                     </div>
@@ -319,7 +366,9 @@
                 <div class="content">
                     <div class="body">
                         <div class="info">
-                            <div class="sub-title line-clamp" style="--line-clamp: 2">Subscribe to our Newsletter!</div>
+                            <div class="sub-title line-clamp" style="--line-clamp: 2">
+                                Subscribe to our Newsletter!
+                            </div>
                             <p class="desc line-clamp" style="--line-clamp: 3">
                                 Subscribe to our newsletter and stay updated.
                             </p>
@@ -330,8 +379,9 @@
                 </div>
             </div>
         </main>
+
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer" style="display: none">
             <div class="content">
                 <div class="row row-top">
                     <!-- column -->
@@ -411,5 +461,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- javascript -->
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>

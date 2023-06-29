@@ -6,7 +6,7 @@
 }
 
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {
@@ -63,6 +63,11 @@
 .footer .row-bottom {
     margin-top: 81px;
     align-items: center;
+}
+
+.footer .logo {
+    position: static;
+    transform: unset;
 }
 
 .footer .copyright {

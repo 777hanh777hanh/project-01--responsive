@@ -84,12 +84,84 @@
     .separate {
         border-top: 1.5px solid #ebebeb;
     }
+
+    .hero-wrap {
+        height: 100%;
+        padding-bottom: 42px;
+    }
+
+    .hero .info {
+        margin: 30px auto auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 42px;
+    }
+
+    .list-guides {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        justify-content: space-evenly;
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    /* Stats */
+    .stats .row {
+        /* flex-direction: column; */
+        column-gap: 32px;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats .info {
+        padding-left: 0;
+    }
+
+    .stats .row-qty .qty-item {
+        padding: 0;
+    }
+
+    .stats .row-qty .qty {
+        font-size: 5rem;
+    }
+
+    /* subscription */
+    .subscription .body .image {
+        display: none;
+    }
+
+    /* footer */
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .show-on-mobile {
         display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -102,5 +174,51 @@
     .menu-drawer {
         inset: 0 30% 0 0;
         padding: 35px;
+    }
+
+    .list-guides {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .featured .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .featured .link {
+        margin-top: 50px;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats */
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block {
+        margin-top: 79px;
+        width: 100%;
+        order: 2;
+    }
+
+    .stats .info {
+        padding: 0;
+        width: 100%;
+        order: 1;
+    }
+
+    .stats .sub-title {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        row-gap: 50px;
     }
 }
